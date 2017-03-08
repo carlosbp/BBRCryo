@@ -1,0 +1,105 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[margin=1.8 cm]{geometry}
+\setlength{\columnsep}{0.7 cm}
+
+\usepackage[]{graphicx}
+\usepackage[skip=10pt,font=scriptsize]{caption,subcaption}
+
+\usepackage[usenames, dvipsnames]{color}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\graphicspath{{bbfigs/}}
+
+\begin{document}
+
+\subsection*{Cryogenic temperatures}
+
+As pointed out in the previous subsection, an estimate (valid for a sufficiently large atom density) of the scale of the time $\tau_c$ until the creation of the first contaminant atom is \cite{AB}
+
+\begin{displaymath}
+\tau_c = \frac{4\delta^2}{\Omega^2}\frac{\tau_0}{b_{nL}N_{\beta}},
+\end{displaymath}
+
+\noindent
+where $N_{\beta}$ is the number of atoms per effective interaction volume $\beta$, and $b_{nL}$ is the sum of the branching ratios from the $nL$ Rydberg state to the contaminant states that contribute the most to the value of $\beta$. $\tau_0$ is the natural lifetime of the  $nL$  state.
+
+The time $\tau_c$ depends on the ambient temperature $T$ through $\tau_0$ and $b_{nL}$. Figs \ref{fig:cthcal1_4} and \ref{fig:cthcal2_4} show this dependence for some $^{87}$Rb $nS$ Rydberg states. These plots were obtained using the estimates from [302] and the quasiclassical formulas in [303]. We also estimated the largest value $T_N^*$ of the temperature $T$ needed to compensate for the avalanche dephasing effect as a function of $N_{\beta}$, fig. \ref{fig:cthcal3_4}.
+
+\begin{figure}[]
+\begin{minipage}[c][4.6cm][t]{.24\textwidth}
+  \vspace*{\fill}
+  \centering
+  \includegraphics[width=3.8cm,height=3.2cm]{tauloglog.png}
+  \subcaption{\iffalse$N^*_T$ vs $T$\fi}
+  \label{fig:cthcal1_4}
+  %
+\end{minipage}%
+\begin{minipage}[c][4.6cm][t]{.24\textwidth}
+  \vspace*{\fill}
+  \centering
+  \includegraphics[width=3.8cm,height=3.2cm]{bloglog.png}
+  \subcaption{\iffalse$N^*_T$ vs $T$\fi}
+  \label{fig:cthcal2_4}
+  %
+\end{minipage}%
+\vspace*{1.8cm}
+\begin{minipage}[c][6cm][b]{.46\textwidth}
+  \centering
+  \includegraphics[width=7.0cm,height=6.8cm]{TvsNbloglog.png}
+  \subcaption{\iffalse$N^*_T$ vs $T$\fi}
+  \label{fig:cthcal3_4}
+\end{minipage}
+\caption{(a). (b). (c).}\label{fig:cthcal_4}
+\end{figure}
+
+Some Rydberg-dressing proposals \cite{pupillo2010},\cite{Glaetzle2012},\cite{Bouchoule2002}, \cite{Glaetzle2014} and previous experimental setups [306] making use of systems with an \textit{effective} $N_{\beta}\sim$ 30-70 would need an ambient temperature between just above 10 K to make up for the dephasing effect. The effects on those with a low atom number $N\sim 10$ \cite{vanBijnen2015}, \cite{Lee2013a} should become negligible for cryogenic temperatures around 70 K.
+
+For several proposals the atom number $N_0$ is $\gtrsim 100$ [\cite{honer10a},\cite{maucher2011}] but the van der Waals blockade radius is larger than or comparable to the sample dimensions. They will not be considerably affected by this dephasing process even if not working in a cryogenic environment.
+
+\begin{thebibliography}{8}
+\bibitem{AB} 
+E. A. Goldschmidt, T. Boulier, R. C. Brown, S. Koller, J. T. Young, A. V. Gorshkov, S. L. Rolston, and J. V. Porto, Phys. Rev. Lett. 116, 113001 (2016). \textcolor{ForestGreen}{Cited already in draft.}
+ 
+\bibitem{Beterov} 
+I. I. Beterov, I. I. Ryabtsev, D. B. Tretyakov, and V. M. Entin,
+Phys. Rev. A 79, 052504 (2009). \textcolor{RedOrange}{Was not cited in draft.}
+
+
+\bibitem{Dyachkov}
+L. G. Dyachkov and P. M. Pankratov, J. Phys. B 27, 461
+(1994). \textcolor{RedOrange}{Was not cited in draft.}
+
+
+\bibitem{pupillo2010} G. Pupillo, A. Micheli, M. Boninsegni, I. Lesanovsky, and
+P. Zoller, Phys. Rev. Lett. 104, 223002 (2010). \textcolor{ForestGreen}{Cited already in draft.}
+
+\bibitem{honer10a} J. Honer, H. Weimer, T. Pfau, and H. P. B\"uchler, Phys. Rev. Lett. 105, 160404 (2010). \textcolor{ForestGreen}{Cited already in draft.}
+
+\bibitem{Glaetzle2012} A. W. Glaetzle, R. Nath, B. Zhao, G. Pupillo, and P. Zoller, Physical Review A 86, 043403 (2012). \textcolor{ForestGreen}{Cited already in draft.}
+
+\bibitem{vanBijnen2015} R. M. W. van Bijnen and T. Pohl, Phys. Rev. Lett. 114,
+243002 (2015). \textcolor{ForestGreen}{Cited already in draft.}
+
+\bibitem{Bouchoule2002} I. Bouchoule and K. M{\o}lmer, Phys. Rev. A 65, 041803
+(2002). \textcolor{ForestGreen}{Cited already in draft.}
+
+\bibitem{Lee2013a} T. E. Lee, S. Gopalakrishnan, and M. D. Lukin, Phys. Rev.
+Lett. 110, 257204 (2013). \textcolor{ForestGreen}{Cited already in draft.}
+
+\bibitem{Glaetzle2014}  A. W. Glaetzle, M. Dalmonte, R. Nath, I. Rousochatzakis,
+R. Moessner, and P. Zoller, Phys. Rev. X 4, 041037 (2014). \textcolor{ForestGreen}{Cited already in draft.}
+
+\bibitem{BlochPaper} J. Zeiher, R. van Bijnen, P. Schauß, S. Hild, J.-y. Choi, T. Pohl, I. Bloch, and C. Gross, Nature Physics (2016).
+
+\bibitem{maucher2011} F. Maucher, N. Henkel, M. Saffman, W. Krolikowski, S. Skupin, ´
+and T. Pohl, Phys. Rev. Lett. 106, 170401 (2011). \textcolor{RedOrange}{Was not cited in draft.}
+
+\bibitem{Heisenberg-limit} Physical Review Letters 116, 053601 (2016). Approaching the Heisenberg Limit without Single-Particle Detection.
+
+
+ 
+\end{thebibliography}
+
+\end{document}
